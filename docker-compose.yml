@@ -6,6 +6,7 @@ services:
       - mq
     ports:
       - "4414"
+      - "7800"
     environment:
       - LICENSE=${LICENSE}
   mq:
