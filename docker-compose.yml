@@ -2,13 +2,15 @@ version: '2'
 services:
   stub:
     image: sg248351/stub
+    depends_on:
+      - mq
     ports:
       - "4414"
     environment:
-      - LICENSE=accept
+      - LICENSE=${LICENSE}
   mq:
     image: sg248351/eventqm
     ports:
       - "1414"
     environment:
-      - LICENSE=accept
+      - LICENSE=${LICENSE}
