@@ -1,0 +1,21 @@
+<wmb:event xmlns:wmb="http://www.ibm.com/xmlns/prod/websphere/messagebroker/6.1.0/monitoring/event">
+ <wmb:eventPointData>
+  <wmb:eventData wmb:productVersion="10006" wmb:eventSchemaVersion="6.1.0.3" wmb:eventSourceAddress="deleteOrder (Implementation).Compute.terminal.out">
+   <wmb:eventIdentity wmb:eventName="Compute.OutTerminal"/>
+   <wmb:eventSequence wmb:creationTime="2016-09-08T21:46:29.794857Z" wmb:counter="1"/>
+   <wmb:eventCorrelation wmb:localTransactionId="fa5a8cd9-a997-4839-b071-8374e88331d0-1" wmb:parentTransactionId="" wmb:globalTransactionId=""/>
+  </wmb:eventData>
+  <wmb:messageFlowData>
+   <wmb:broker wmb:name="SHBK" wmb:UUID="45b21b15-09f3-40d5-8ba6-29f7f90e1168"/>
+   <wmb:executionGroup wmb:name="default" wmb:UUID="08b006aa-552f-4926-9f66-40ad38485e18"/>
+   <wmb:messageFlow wmb:uniqueFlowName="SHBK.default.Orders.gen.Orders" wmb:name="gen.Orders" wmb:UUID="38d8b198-1a79-40b3-927e-5ddbaecb251d" wmb:threadId="8908"/>
+   <wmb:node wmb:nodeLabel="deleteOrder (Implementation).Compute" wmb:nodeType="ComIbmComputeNode" wmb:terminal="out"/>
+  </wmb:messageFlowData>
+ </wmb:eventPointData>
+ <wmb:applicationData xmlns="">
+  <wmb:simpleContent wmb:name="orderId" wmb:value="2" wmb:dataType="string"/>
+  <wmb:simpleContent wmb:name="OrderType" wmb:value="CANCELED" wmb:dataType="string"/>
+  <wmb:simpleContent wmb:name="campaignId" wmb:value="" wmb:dataType="string"/>
+ </wmb:applicationData>
+</wmb:event>
+
