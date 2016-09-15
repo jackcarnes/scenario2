@@ -1,7 +1,8 @@
 version: '2'
 services:
   stub:
-    image: sg248351/stub
+    build: 99_docker/stub/
+    image: sg248351/order-api-stub
     depends_on:
       - mq
     ports:
