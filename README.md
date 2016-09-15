@@ -1,6 +1,6 @@
 # Welcome
 
-This is the repository for all resources on Scenario 1 for the IBM RedBooks publication "A Practical Guide for IBM Hybrid Integration Platform".
+This is the repository for all resources on Scenario 2 for the IBM RedBooks publication "A Practical Guide for IBM Hybrid Integration Platform".
 
 ## Docker config
 Follow the steps below to recreate the scenario environment on your own docker host. For this to work you need to have both docker and docker-compose installed and working.
