@@ -13,11 +13,13 @@ ADD CallableOrderStub.bar /tmp/CallableOrderStub.bar
 ADD CallableOrderStub.overrides /tmp/CallableOrderStub.overrides
 ADD orderfiles/*.json /tmp/OrderStub/
 
-ADD agent/agentx.json  /tmp/SwitchAgent/agentx.json
+ADD agents/agentx.json  /tmp/SwitchAgent/agentx.json
+ADD agents/agentp.json  /tmp/SwitchAgent/agentp.json
 
 ENV BASH_ENV=/usr/local/bin/iib_env.sh
 
 RUN bash && source /opt/ibm/iibruntime/server/bin/mqsiprofile && mqsistart node1 && sleep 3 && \
     mqsiapplybaroverride -b /tmp/CallableOrderStub.bar -p /tmp/CallableOrderStub.overrides -r && \
     mqsideploy node1 -e default -a /tmp/CallableOrderStub.bar && \
-    mqsichangeproperties node1 -e default -o ComIbmIIBSwitchManager -n agentXConfigFile -p /tmp/SwitchAgent/agentx.json
+    mqsichangeproperties node1 -e default -o ComIbmIIBSwitchManager -n agentXConfigFile -p /tmp/SwitchAgent/agentx.json && \
+    iibswitch create agentp -c /tmp/SwitchAgent/agentp.json

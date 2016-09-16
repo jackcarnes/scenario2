@@ -1,9 +1,9 @@
 version: '2'
 services:
 
-  stub:
-    build: 99_docker/stub/
-    image: sg248351/order-api-stub
+  iib-on-premise:
+    build: 99_docker/iib-sc2/
+    image: sg248351/iib-sc2
     depends_on:
       - mq
     ports:
@@ -12,7 +12,7 @@ services:
     networks:
       sc2-net:
         aliases:
-          - stub
+          - iib
     environment:
       - LICENSE=${LICENSE}
 
@@ -26,19 +26,6 @@ services:
           - mq
     environment:
       - LICENSE=${LICENSE}
-
-  sgc:
-    build: 99_docker/sgc/
-    image: sg248351/secure-gateway-client
-    depends_on:
-      - stub
-      - mq
-    #command: [nq9qKFXqQq4_prod_ng, -F, /tmp/aclfile.txt, --sectoken, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb25maWd1cmF0aW9uX2lkIjoibnE5cUtGWHFRcTRfcHJvZF9uZyIsInJlZ2lvbiI6InVzLXNvdXRoIiwiaWF0IjoxNDc0MDExNjk4LCJleHAiOjE0ODE3ODc2OTh9.mwS9FM4cks5m0ppfHqP7oR_cM9mGo-JHZ1N8UUujNkk]
-    command: ["${SC2_GWID}", -F, /tmp/aclfile.txt, --sectoken, "${SC2_SECTOKEN}"]
-    networks:
-      sc2-net:
-        aliases:
-          - sgc
 
 networks:
   sc2-net:
