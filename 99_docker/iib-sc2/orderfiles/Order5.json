@@ -1,10 +1,10 @@
 {
-  "ORDERID": 5,
-  "ACCOUNTNAME": "AccountA",
-  "TOTAL": 5000,
-  "STATUS": "CANCELED",
-  "CREATIONDATE": "2016-12-31",
-  "CAMPAIGNID": "Winter Sale",
+  "orderId": 5,
+  "accountName": "AccountA",
+  "total": 5000,
+  "status": "CANCELED",
+  "creationDate": "2016-12-31",
+  "campaignId": "Winter Sale",
   "accountDetails": {
     "accountName": "AccountA",
     "salesforceId": "0012800000qqyIcAAI",
@@ -13,19 +13,19 @@
   },
   "lineItems": [
     {
-      "PRODUCTID": 89,
-      "QUANTITY": 2,
-      "PRICE": 8578
+      "productId": 89,
+      "quantity": 2,
+      "price": 8578
     },
     {
-      "PRODUCTID": 333,
-      "QUANTITY": 2,
-      "PRICE": 6000
+      "productId": 333,
+      "quantity": 2,
+      "price": 6000
     },
     {
-      "PRODUCTID": 123,
-      "QUANTITY": 16,
-      "PRICE": 2200
+      "productId": 123,
+      "quantity": 16,
+      "price": 2200
     }
   ]
 }
