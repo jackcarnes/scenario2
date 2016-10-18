@@ -1,7 +1,7 @@
 version: '2'
 services:
 
-  iib-on-premise:
+  stub:
     build: 99_docker/iib-sc2/
     image: sg248351/iib-sc2
     depends_on:
@@ -12,7 +12,7 @@ services:
     networks:
       sc2-net:
         aliases:
-          - iib
+          - stub
     environment:
       - LICENSE=${LICENSE}
 
