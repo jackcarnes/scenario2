@@ -1,1 +1,30 @@
-{"ORDERID":2,"ACCOUNTNAME":"AccountA","TOTAL":5E+3,"STATUS":"CANCELED","CREATIONDATE":"2016-12-31","accountDetails":{"accountName":"AccountA","salesforceId":"0012800000qqyIcAAI","billingCountry":"Japan","billingPostalCode":"999999"},"lineItems":[{"PRODUCTID":89,"QUANTITY":2,"PRICE":8.578E+3},{"PRODUCTID":333,"QUANTITY":2,"PRICE":6E+3},{"PRODUCTID":123,"QUANTITY":16,"PRICE":2.2E+3}]}
+{
+  "ORDERID": 2,
+  "ACCOUNTNAME": "AccountA",
+  "TOTAL": 5000,
+  "STATUS": "CANCELED",
+  "CREATIONDATE": "2016-12-31",
+  "accountDetails": {
+    "accountName": "AccountA",
+    "salesforceId": "0012800000qqyIcAAI",
+    "billingCountry": "Japan",
+    "billingPostalCode": "999999"
+  },
+  "lineItems": [
+    {
+      "PRODUCTID": 89,
+      "QUANTITY": 2,
+      "PRICE": 8578
+    },
+    {
+      "PRODUCTID": 333,
+      "QUANTITY": 2,
+      "PRICE": 6000
+    },
+    {
+      "PRODUCTID": 123,
+      "QUANTITY": 16,
+      "PRICE": 2200
+    }
+  ]
+}

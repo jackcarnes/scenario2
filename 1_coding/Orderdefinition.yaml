@@ -3,7 +3,7 @@ info:
   title: Order events behaviors
   description: Definition of Order events produced by and available from IIB
   version: 1.0.0
-host: otbsmnp6.ibmintegrationbus.ibmcloud.com
+host: mgjm7796.ibmintegrationbus.ibmcloud.com 
 schemes:
   - https
 basePath: /
