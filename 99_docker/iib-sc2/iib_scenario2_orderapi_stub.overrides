@@ -1,0 +1,2 @@
+orderapi_stub_worker#retrieve file.inputDirectory = /tmp/OrderStub
+orderapi_stub_updatefile#WriteFile.outputDirectory = /tmp/OrderStub
