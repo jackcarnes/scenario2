@@ -9,4 +9,5 @@ FROM sg248351/eventqm
 MAINTAINER Carsten Bornert carsten.bornert@uk.ibm.com
 
 ADD testfiles /root/testfiles
-ADD testscripts/* /root
+ADD testscripts/* /root/
+RUN chmod +x /root/*.sh

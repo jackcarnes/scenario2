@@ -18,7 +18,7 @@ services:
 
   mq:
     build: 99_docker/mq-sc2/
-    image: sg248351/iib-sc2
+    image: sg248351/mq-sc2
     ports:
       - "1414"
     networks:
