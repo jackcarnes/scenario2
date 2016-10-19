@@ -14,8 +14,7 @@
  </wmb:eventPointData>
  <wmb:applicationData xmlns="">
   <wmb:simpleContent wmb:name="orderId" wmb:value="2" wmb:dataType="string"/>
-  <wmb:simpleContent wmb:name="OrderType" wmb:value="CANCELED" wmb:dataType="string"/>
+  <wmb:simpleContent wmb:name="OrderType" wmb:value="CREATED" wmb:dataType="string"/>
   <wmb:simpleContent wmb:name="campaignId" wmb:value="" wmb:dataType="string"/>
  </wmb:applicationData>
 </wmb:event>
-

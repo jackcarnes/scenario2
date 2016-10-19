@@ -1,12 +1,13 @@
 {
-  "orderId": 2,
-  "accountName": "AccountA",
+  "orderId": 1,
+  "accountName": "aaaaaaaaaa",
   "total": 5000,
-  "status": "CANCELED",
+  "status": "CREATED",
   "creationDate": "2016-12-31",
+  "campaignId": "Winter Sale",
   "accountDetails": {
     "accountName": "AccountA",
-    "salesforceId": "0012800000qqyIcAAI",
+    "salesforceId": "bbbbbbbbbb",
     "billingCountry": "Japan",
     "billingPostalCode": "999999"
   },

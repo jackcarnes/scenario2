@@ -17,7 +17,8 @@ services:
       - LICENSE=${LICENSE}
 
   mq:
-    image: sg248351/eventqm
+    build: 99_docker/mq-sc2/
+    image: sg248351/iib-sc2
     ports:
       - "1414"
     networks:
