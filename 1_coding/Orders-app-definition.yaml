@@ -1,9 +1,9 @@
 swagger: '2.0'
 info:
-  title: Order events behaviors
-  description: Definition of Order events produced by and available from IIB
+  title: Order events triggers
+  description: Triggers related to order updates exposed through IIB
   version: 1.0.0
-host: mgjm7796.ibmintegrationbus.ibmcloud.com 
+host: ch4gine4.ibmintegrationbus.ibmcloud.com 
 schemes:
   - https
 basePath: /
@@ -38,7 +38,7 @@ x-hooks:
               schema:
                 $ref: '#/definitions/Product'
 paths:
-  /user01/warehouse/stock/hook:
+  /triggers/orders-updates:
     post:
       operationId: 'warehouseSubscribeOperation'
       summary: Create a subscription to webhook for warehouse stock
@@ -75,7 +75,7 @@ paths:
             items:
               type: string
 
-  /user01/warehouse/stock/hook/{id}:
+  /triggers/orders-updates/{id}:
     delete:
       operationId: 'warehouseUnsubscribeOperation'
       summary: Delete a subscription to the webhook for warehouse stock
@@ -177,4 +177,3 @@ definitions:
         type:  string
       salesforceId:
         type:  string
-
