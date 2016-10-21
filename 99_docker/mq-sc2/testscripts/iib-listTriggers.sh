@@ -1,2 +1,4 @@
 #!/bin/bash
-curl -X GET $1/hook
+curl -X GET $1/triggers/orders-updates
+echo
+echo
